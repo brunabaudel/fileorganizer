@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var searchText: String = ""
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            SidebarView(folders: folders)
+                .navigationTitle("Files")
+                .searchable(text: $searchText) {}
         }
-        .padding()
     }
 }
 

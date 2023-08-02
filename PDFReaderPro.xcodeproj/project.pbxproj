@@ -11,6 +11,12 @@
 		F8EDCC20293A3D4D00E5E5EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDCC1F293A3D4D00E5E5EE /* ContentView.swift */; };
 		F8EDCC22293A3D4E00E5E5EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8EDCC21293A3D4E00E5E5EE /* Assets.xcassets */; };
 		F8EDCC26293A3D4E00E5E5EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8EDCC25293A3D4E00E5E5EE /* Preview Assets.xcassets */; };
+		F8EDCC52293A4B9A00E5E5EE /* RecentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDCC51293A4B9A00E5E5EE /* RecentsView.swift */; };
+		F8EDCC54293A688C00E5E5EE /* FileItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDCC53293A688C00E5E5EE /* FileItemView.swift */; };
+		F8EDCC56293A6AD100E5E5EE /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDCC55293A6AD100E5E5EE /* SidebarView.swift */; };
+		F8EDCC59293A6B1E00E5E5EE /* FolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDCC58293A6B1E00E5E5EE /* FolderModel.swift */; };
+		F8EDCC5B293A726C00E5E5EE /* FileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDCC5A293A726C00E5E5EE /* FileView.swift */; };
+		F8EDCC61293A8CF100E5E5EE /* FolderItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDCC60293A8CF100E5E5EE /* FolderItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		F8EDCC21293A3D4E00E5E5EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8EDCC23293A3D4E00E5E5EE /* PDFReaderPro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PDFReaderPro.entitlements; sourceTree = "<group>"; };
 		F8EDCC25293A3D4E00E5E5EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8EDCC51293A4B9A00E5E5EE /* RecentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsView.swift; sourceTree = "<group>"; };
+		F8EDCC53293A688C00E5E5EE /* FileItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileItemView.swift; sourceTree = "<group>"; };
+		F8EDCC55293A6AD100E5E5EE /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		F8EDCC58293A6B1E00E5E5EE /* FolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderModel.swift; sourceTree = "<group>"; };
+		F8EDCC5A293A726C00E5E5EE /* FileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileView.swift; sourceTree = "<group>"; };
+		F8EDCC60293A8CF100E5E5EE /* FolderItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				F8EDCC1D293A3D4D00E5E5EE /* PDFReaderProApp.swift */,
-				F8EDCC1F293A3D4D00E5E5EE /* ContentView.swift */,
+				F8EDCC64293B81C500E5E5EE /* Views */,
+				F8EDCC57293A6B1200E5E5EE /* Model */,
 				F8EDCC21293A3D4E00E5E5EE /* Assets.xcassets */,
 				F8EDCC23293A3D4E00E5E5EE /* PDFReaderPro.entitlements */,
 				F8EDCC24293A3D4E00E5E5EE /* Preview Content */,
@@ -67,6 +80,43 @@
 				F8EDCC25293A3D4E00E5E5EE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8EDCC57293A6B1200E5E5EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8EDCC58293A6B1E00E5E5EE /* FolderModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8EDCC62293B81AD00E5E5EE /* File */ = {
+			isa = PBXGroup;
+			children = (
+				F8EDCC53293A688C00E5E5EE /* FileItemView.swift */,
+				F8EDCC5A293A726C00E5E5EE /* FileView.swift */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		F8EDCC63293B81B300E5E5EE /* Folder */ = {
+			isa = PBXGroup;
+			children = (
+				F8EDCC60293A8CF100E5E5EE /* FolderItemView.swift */,
+				F8EDCC51293A4B9A00E5E5EE /* RecentsView.swift */,
+			);
+			path = Folder;
+			sourceTree = "<group>";
+		};
+		F8EDCC64293B81C500E5E5EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8EDCC1F293A3D4D00E5E5EE /* ContentView.swift */,
+				F8EDCC55293A6AD100E5E5EE /* SidebarView.swift */,
+				F8EDCC62293B81AD00E5E5EE /* File */,
+				F8EDCC63293B81B300E5E5EE /* Folder */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8EDCC5B293A726C00E5E5EE /* FileView.swift in Sources */,
 				F8EDCC20293A3D4D00E5E5EE /* ContentView.swift in Sources */,
+				F8EDCC59293A6B1E00E5E5EE /* FolderModel.swift in Sources */,
+				F8EDCC52293A4B9A00E5E5EE /* RecentsView.swift in Sources */,
 				F8EDCC1E293A3D4D00E5E5EE /* PDFReaderProApp.swift in Sources */,
+				F8EDCC61293A8CF100E5E5EE /* FolderItemView.swift in Sources */,
+				F8EDCC56293A6AD100E5E5EE /* SidebarView.swift in Sources */,
+				F8EDCC54293A688C00E5E5EE /* FileItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +335,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -317,7 +373,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
